@@ -101,13 +101,11 @@ def sign_file(input_file: str, signatureID: str, x_coordinate: int,
         # Create a signature text field and push it on the page
         pg.AnnotPushBack(sigField)
     # Signature image
-    sign_filename = '/root/python/static/asinatura.jpg'
-       # os.path.dirname(
-        #os.path.abspath(__file__)) + "\static\signature.jpg"
-        
+    sign_filename = os.path.dirname(
+        os.path.abspath(__file__)) + "/static/signature/signature.png"        
     # Self signed certificate
     pk_filename = os.path.dirname(
-        os.path.abspath(__file__)) + "/static/container.pfx"
+        os.path.abspath(__file__)) + "/static/digt_cert/container.pfx"
     # Retrieve the signature field.
     approval_field = doc.GetField(signatureID)
     approval_signature_digsig_field = DigitalSignatureField(approval_field)

@@ -11,9 +11,9 @@
             "program": "pdf_signer.py",
             "args": [ 
                 "-i", "static/Exame1.pdf",
-                "-x", "300",
+                "-x", "450",
                 "-s", "BM",
-                "-y", "280"
+                "-y", "30"
             ],
             "console": "integratedTerminal",
             "justMyCode": true
